@@ -33,7 +33,7 @@ section{
 h1 {
 	font-family: helvetica;
 	font-size: 32px;
-	color: orange;
+	color: rgb(250, 185, 54);
 }
 
 h2{
@@ -146,6 +146,7 @@ a:hover {
 footer {
 	background:#a7fac4;
 	border-radius: 10px;
+	text-align:center;
 	
 }
 
@@ -213,7 +214,16 @@ h1 {
 	transform: scale(1.03);
 	transform: rotate(5deg); /*esto lo podes sacar si no te gusta, en el archivo que te mande ahi mas cosas que podes implementar*/
 }
-
+.column {
+	width: 100%;
+  }
+  
+  @media (min-width: 600px) {
+	.column {
+	  width: 50%;
+	}
+  } 
+  
 
 
 

@@ -195,10 +195,12 @@ h1 {
  }
 
 .image-containerIndex img{
-	width: 400px;
+    width: 400px;
 	height: 300px;
 	margin:0 auto;
 	padding-bottom: 30px;
+	flex-wrap: nowrap | wrap | wrap-reverse;
+	
 }
 
 .image-containerIndex  {
@@ -341,3 +343,19 @@ to {-webkit-transform:scale(2,4);}
 
 
 
+@media(max-width:800px){
+	.section-adoptantes {
+		flex-direction: column;
+	}
+	#menu ul {
+		flex-wrap: wrap;
+	}
+	.image-containerIndex img {
+		width: 100%;
+	}
+	h1, .h1 {
+		font-size: 1.5rem;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+}
